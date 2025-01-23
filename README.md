@@ -15,7 +15,11 @@ This software suite will be broken into three parts
 
 ### Usage
 
-Clone the repository and simply execute:
+Clone the repository
+
+Add a .env to server (env.example)
+ 
+Simply execute:
 
 ```bash
 docker compose up
