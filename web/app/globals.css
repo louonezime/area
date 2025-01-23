@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: background;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: dark_background;
+  }
+}
+
+@font-face {
+  font-family: "font-avenir-next";
+  src: url("./fonts/avenir-next/AvenirNextCyr-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "font-avenir-next";
+  src: url("./fonts/avenir-next/AvenirNextCyr-Heavy.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "font-avenir-next";
+  src: url("./fonts/avenir-next/AvenirNextCyr-Regular.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  color: var(--foreground);
+  font-family: "font-avenir-next", sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.welcome-grey-background-svg {
+  background-image: url("./public/assets/welcome-bg.svg");
+  background-position: 50% 65%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 100%;
+}
+
+.logo-white-clear-bg-svg {
+  background-image: url("./public/assets/area-white-logo-clear-bg.svg");
+  background-position: 50% 65%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 160px;
+}
+
+.logo-black-size-up-clear-bg-svg {
+  background-image: url("./public/assets/area-black-logo-clear-bg.svg");
+  background-position: 50% 65%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 160px;
+  width: 160px;
+}
+
+.logo-black-clear-bg-svg {
+  background-image: url("./public/assets/area-black-logo-clear-bg.svg");
+  background-position: 50% 65%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 140px;
+  width: 140px;
+}
+
+.google-icon-svg {
+  background-image: url("./public/assets/google-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+.apple-icon-svg {
+  background-image: url("./public/assets/apple-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+.facebook-icon-svg {
+  background-image: url("./public/assets/facebook-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+}
+
+.discord-icon-svg {
+  background-image: url("./public/assets/discord-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+}
+
+.twitch-icon-svg {
+  background-image: url("./public/assets/twitch-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+}
+
+.spotify-icon-svg {
+  background-image: url("./public/assets/spotify-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+}
+
+.user-profile-svg {
+  background-image: url("./public/assets/user-profile.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px;
+}
+
+.france-flag-icon-svg {
+  background-image: url("./public/assets/france-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+}
+
+.uk-flag-icon-svg {
+  background-image: url("./public/assets/uk-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+}
+
+.gitlab-icon-svg {
+  background-image: url("./public/assets/gitlab-icon.svg");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}

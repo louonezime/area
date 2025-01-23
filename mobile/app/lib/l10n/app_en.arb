@@ -1,0 +1,354 @@
+{
+  "logIn": "Log in",
+  "@logIn": {
+    "description": "Title of the Login page."
+  },
+  "signUp": "Sign up",
+  "@signUp": {
+    "description": "Title of the Register page."
+  },
+  "or": "or",
+  "@or": {
+    "description": "Text placed in the divider to allow user to use other services to authenticate."
+  },
+  "signUpHere": "Sign up here",
+  "@signUpHere": {
+    "description": "Link to Register page in the Login page."
+  },
+  "logInHere": "Log in here",
+  "@logInHere": {
+    "description": "Link to Login page in the Register page."
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password"
+  },
+  "confirmPassword": "Confirm password",
+  "@confirmPassword": {
+    "description": "Confirm password"
+  },
+  "newToArea": "New to AREA?",
+  "@newToArea": {
+    "description": "Question the user asking if they want to register."
+  },
+  "alreadyInArea": "Already in AREA?",
+  "@alreadyInArea": {
+    "description": "Question the user asking if they already have an AREA account."
+  },
+  "continueWithService": "Continue with {service}",
+  "@continueWithService": {
+    "description": "Service name to place on the button",
+    "placeholders": {
+      "service": {
+        "type": "String",
+        "example": "Google"
+      }
+    }
+  },
+  "actions": "Actions",
+  "@actions": {
+    "description": "Actions page name."
+  },
+  "action": "Action",
+  "@action": {
+    "description": "Action recap title."
+  },
+  "create": "Create",
+  "@create": {
+    "description": "Create page name."
+  },
+  "aboutThisProject": "About This Project",
+  "@aboutThisProject": {
+    "description": "About This Project page name."
+  },
+  "aboutUs": "About Us",
+  "@aboutUs": {
+    "description": "About Us page name."
+  },
+  "pleaseEnterAnEmail": "Please enter an email address",
+  "@pleaseEnterAnEmail": {
+    "description": "Missing email error."
+  },
+  "pleaseEnterAValidEmail": "Please enter a valid email address",
+  "@pleaseEnterAValidEmail": {
+    "description": "Not an email error."
+  },
+  "pleaseEnterYourPassword": "Please enter your password",
+  "@pleaseEnterYourPassword": {
+    "description": "Missing password error."
+  },
+  "pleaseConfirmYourPassword": "Please confirm your password",
+  "@pleaseConfirmYourPassword": {
+    "description": "Missing confirm password error."
+  },
+  "passwordsDontMatch": "Passwords don't match",
+  "@passwordsDontMatch": {
+    "description": "Passwords don't match error."
+  },
+  "getStarted": "Get started",
+  "@getStarted": {
+    "description": "Get started button in Login and Register pages."
+  },
+  "profileInfos": "Profile infos",
+  "@profileInfos": {
+    "description": "Profile icon."
+  },
+  "menu": "Menu",
+  "@menu": {
+    "description": "Menu tooltip showing when long pressing the button."
+  },
+  "search": "Search...",
+  "@search": {
+    "description": "Search label for search bar."
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings page name."
+  },
+  "startNow": "Start today",
+  "@startNow": {
+    "description": "Home page start now button, MUST BE ALL CAPS."
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading label."
+  },
+  "logOut": "Log out",
+  "@logOut": {
+    "description": "Log out button name."
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile button name."
+  },
+  "error500": "Internal error, try again later.",
+  "@error500": {
+    "description": "Error 500 message from API call."
+  },
+  "registerError400": "Password is too short, use 8 characters minimum.",
+  "@registerError400": {
+    "description": "Error 400 message from API call, password too short (less than 8 character)."
+  },
+  "loginError401": "Invalid email or password.",
+  "@loginError401": {
+    "description": "Error 401 message from API call, unknown credentials."
+  },
+  "registerError409": "Email already in use.",
+  "@registerError409": {
+    "description": "Error 409 message from API call, email already in use."
+  },
+  "scrollToTop": "Scroll to top",
+  "@scrollToTop": {
+    "description": "Scroll to top button tooltip."
+  },
+  "reactions": "Reactions",
+  "@reactions": {
+    "description": "Reactions page title."
+  },
+  "reaction": "Reaction",
+  "@reaction": {
+    "description": "Reaction recap title."
+  },
+  "connect": "Connect",
+  "@connect": {
+    "description": "Reaction modal connect button."
+  },
+  "connectionError": "Connection error, try again later.",
+  "@connectionError": {
+    "description": "Reaction connect button error message for snackbar."
+  },
+  "connectionSuccess": "Connection successful!",
+  "@connectionSuccess": {
+    "description": "Reaction connect button success message for snackbar."
+  },
+  "noAreasYet": "No AREAs yet",
+  "@noAreasYet": {
+    "description": "AREA list in profile empty message."
+  },
+  "services": "Services",
+  "@services": {
+    "description": "Services title."
+  },
+  "servicesConnected": "Services connected",
+  "@servicesConnected": {
+    "description": "Services connected title."
+  },
+  "nothingToDisplay": "Nothing to display",
+  "@nothingToDisplay": {
+    "description": "Empty element list."
+  },
+  "areaIf": "If",
+  "@areaIf": {
+    "description": "'If' but with area in the name so it can be used in Dart."
+  },
+  "areaThis": "This",
+  "@areaThis": {
+    "description": "'This' but with area in the name so it can be used in Dart."
+  },
+  "areaThen": "Then",
+  "@areaThen": {
+    "description": "'Then' but with area in the name so it can be used in Dart."
+  },
+  "that": "That",
+  "@that": {
+    "description": "That."
+  },
+  "submit": "Submit",
+  "@submit": {
+    "description": "Submit button."
+  },
+  "value": "Enter {value}",
+  "@value": {
+    "description": "Value input field.",
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "Channel ID"
+      }
+    }
+  },
+  "pleaseEnterAValue": "Please enter a value",
+  "@pleaseEnterAValue": {
+    "description": "No value entered in input field."
+  },
+  "review": "Review",
+  "@review": {
+    "description": "Review page title."
+  },
+  "apiKey": "API Key",
+  "@apiKey": {
+    "description": "API Key field title."
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home page title."
+  },
+  "aboutThisProjectMessage": "The goal of this project is to discover, as a whole, the software platform that we have chosen through the creation of a business application.\n\nTo do this, we implemented a software suite that functions similar to that of IFTTT and/or Zapier.\nThis software suite is broken into three parts :\n\n✓ An application server\n✓ A web client to use the application from your browser by querying the application server\n✓ A mobile client to use the application from your phone by querying the application server",
+  "@aboutThisProjectMessage": {
+    "description": "Description of the project displayed on the About This Project page."
+  },
+  "aboutUsMessage": "This is our team, we are students of EPITECH in 3rd year.",
+  "@aboutUsMessage": {
+    "description": "Description of the team displayed on the About Us page."
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button tooltip."
+  },
+  "switchTheme": "Switch Theme",
+  "@switchTheme": {
+    "description": "Switch theme mode button title."
+  },
+  "lightTheme": "Light Theme",
+  "@lightTheme": {
+    "description": "Light theme tooltip."
+  },
+  "darkTheme": "Dark Theme",
+  "@darkTheme": {
+    "description": "Dark theme tooltip."
+  },
+  "changeLanguage": "Switch Language",
+  "@changeLanguage": {
+    "description": "Change Language button title."
+  },
+  "changeServerHost": "Switch Server Host",
+  "@changeServerHost": {
+    "description": "Change Server Host button title."
+  },
+  "noInfosNeeded": "No informations needed",
+  "@noInfosNeeded": {
+    "description": "Message displayed on the AREA modal if the form is empty."
+  },
+  "load": "Load",
+  "@load": {
+    "description": "Load button label."
+  },
+  "noSuggestionsFound": "No Suggestions Found",
+  "@noSuggestionsFound": {
+    "description": "No Suggestions Found search bar error."
+  },
+  "areaDeletionConfirmation": "Are you sure you want to delete this AREA?",
+  "@areaDeletionConfirmation": {
+    "description": "Message displayed on DELETE button pressed in AREA modal."
+  },
+  "serviceDeletionConfirmation": "Are you sure you want to delete Service {service}?",
+  "@serviceDeletionConfirmation": {
+    "description": "Message displayed on DELETE button pressed in Service modal.",
+    "placeholders": {
+      "service": {
+        "type": "String",
+        "example": "Google"
+      }
+    }
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button name."
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back tooltip."
+  },
+  "host": "Host",
+  "@host": {
+    "description": "Host label."
+  },
+  "validate": "Validate",
+  "@validate": {
+    "description": "Validate label."
+  },
+  "service": "Service",
+  "@service": {
+    "description": "Service title."
+  },
+  "authType": "Authentication Method",
+  "@authType": {
+    "description": "AuthType title for Service modal."
+  },
+  "areaCreateSuccess": "AREA created successfully!",
+  "@areaCreateSuccess": {
+    "description": "AREA creation success snackbar."
+  },
+  "areaDeleteSuccess": "AREA deleted successfully.",
+  "@areaDeleteSuccess": {
+    "description": "AREA deletion success snackbar."
+  },
+  "explore": "Explore your possibilities with AREA",
+  "@explore": {
+    "description": "Explore sentence in home page."
+  },
+  "serviceDeleteSuccess": "Service {service} deleted successfully.",
+  "@serviceDeleteSuccess": {
+    "description": "Service deletion success snackbar.",
+    "placeholders": {
+      "service": {
+        "type": "String",
+        "example": "Google"
+      }
+    }
+  },
+  "areaExample1": "Quickly email yourself a note",
+  "@areaExample1": {
+    "description": "Example AREA card on home page not logged in."
+  },
+  "areaExample2": "Create your own AREA",
+  "@areaExample2": {
+    "description": "Example AREA card on home page not logged in."
+  },
+  "areaExample3": "Update your Github bio in one click",
+  "@areaExample3": {
+    "description": "Example AREA card on home page not logged in."
+  },
+  "none": "None",
+  "@none": {
+    "description": "Null type display."
+  },
+  "chooseService": "Choose a service",
+  "@chooseService": {
+    "description": "Services page title."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "domains": [
+    "http://localhost:8080",
+    "http://10.0.0.2:8080"
+  ],
+  "endpoints": [
+    {
+      "name": "login",
+      "path": "/auth/login"
+    },
+    {
+      "name": "register",
+      "path": "/auth/register"
+    },
+    {
+      "name": "services",
+      "path": "/service/list"
+    },
+    {
+      "name": "my-services",
+      "path": "/service/myList"
+    },
+    {
+      "name": "service-add-api-key",
+      "path": "/service/%/add-api-key"
+    },
+    {
+      "name": "service-register-normal",
+      "path": "/service/%/register-normal"
+    },
+    {
+      "name": "service-oauth2-init",
+      "path": "/oauth/%/init"
+    },
+    {
+      "name": "service-oauth2-callback",
+      "path": "/oauth/%/callback"
+    },
+    {
+      "name": "service-oauth-callback",
+      "path": "/service/%/oauth/callback"
+    },
+    {
+      "name": "service-oauth-callback-code-add",
+      "path": "/service/%/oauth/callback/code-add"
+    },
+    {
+      "name": "service-refresh-token",
+      "path": "/service/%/refresh"
+    },
+    {
+      "name": "service-delete",
+      "path": "/service/%"
+    },
+    {
+      "name": "service",
+      "path": "/service/%"
+    },
+    {
+      "name": "user",
+      "path": "/user"
+    },
+    {
+      "name": "areas",
+      "path": "/area/list"
+    },
+    {
+      "name": "area-creation",
+      "path": "/area"
+    },
+    {
+      "name": "area-delete",
+      "path": "/area/%"
+    },
+    {
+      "name": "action",
+      "path": "/area/actions/%"
+    },
+    {
+      "name": "reaction",
+      "path": "/area/reactions/%"
+    }
+  ]
+}

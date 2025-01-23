@@ -1,0 +1,87 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name        String
+  email        String
+  password     String?  // null if logged with oauth
+  oauthProvider String? // null if no provider
+  services    Service[]
+  area    Area[]
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+}
+
+
+model OAuthToken {
+  id            Int      @id @default(autoincrement())
+  accessToken   String
+  refreshToken  String?  // Optional, depending on the OAuth2 provider
+  expiresAt     DateTime?
+  tokenType     String
+  metadata      Json?
+  service       Service?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+enum ServiceState {
+  ACTIVE
+  SUSPENDED
+}
+
+model Service {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  user        User  @relation(fields: [userId], references: [id])
+  name        String
+  oauthTokenId  Int?  @unique
+  oauthToken       OAuthToken?  @relation(fields: [oauthTokenId], references: [id])
+  ApiToken  String?
+  state   ServiceState
+  actions   Action[]
+  reactions   Reaction[]
+}
+
+model Action {cd
+  id          Int      @id @default(autoincrement())
+  serviceId        Int
+  service       Service?  @relation(fields: [serviceId], references: [id])
+  name        String
+  payload     Json?
+  areas       Area?
+  lastState   Json?
+}
+
+model Reaction {
+  id          Int      @id @default(autoincrement())
+  serviceId        Int
+  service       Service?  @relation(fields: [serviceId], references: [id])
+  name        String
+  payload     Json?
+  areas       Area?
+}
+
+model Area {
+  id          Int      @id @default(autoincrement())
+  name        String
+  userId      Int
+  user       User  @relation(fields: [userId], references: [id])
+  actionId    Int?  @unique
+  action       Action?  @relation(fields: [actionId], references: [id])
+  reactionId    Int?  @unique
+  reaction     Reaction?  @relation(fields: [reactionId], references: [id])
+}
