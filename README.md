@@ -22,5 +22,5 @@ docker compose up
 ```
 
 Developers
-| [<img src="https://github.com/louonezime.png?size=85" width=85><br><sub>Lou Onezime</sub>](https://github.com/louonezime) | [<img src="https://github.com/adamdeziri.png?size=85" width=85><br><sub>Adam Deziri</sub>](https://github.com/adamdeziri) | [<img src="https://avatars.githubusercontent.com/u/100275038?v=4?size=85" width=85><br><sub>Alexandre Vigoureux</sub>](https://github.com/Aluxray) | [<img src="https://avatars.githubusercontent.com/u/114922714?v=4?size=85" width=85><br><sub>Johana Gaba</sub>](https://github.com/ivsgabi)
+| [<img src="https://github.com/louonezime.png?size=85" width=85><br><sub>Lou Onezime (Back-end)</sub>](https://github.com/louonezime) | [<img src="https://github.com/adamdeziri.png?size=85" width=85><br><sub>Adam Deziri (Back-end)</sub>](https://github.com/adamdeziri) | [<img src="https://avatars.githubusercontent.com/u/100275038?v=4?size=85" width=85><br><sub>Alexandre Vigoureux (Mobile)</sub>](https://github.com/Aluxray) | [<img src="https://avatars.githubusercontent.com/u/114922714?v=4?size=85" width=85><br><sub>Johana Gaba (Web)</sub>](https://github.com/ivsgabi)
 | :---: | :---: | :---: | :---: |
